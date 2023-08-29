@@ -1,0 +1,209 @@
+/* UNIVERSAL */
+
+html {
+    margin:0;
+    padding: 0;
+    font-size: 24px;
+}
+
+body{
+    margin:0;
+    padding:0;
+    background-image: url("./images/cartoon-forest-background-2000-x-1111-dxfydhe4ndu210c4.jpg");
+    background-position: top;
+    background-size: cover;
+
+}
+
+a{
+    color: black;
+    font-size: larger;
+    font-weight: bold;
+
+
+}
+
+a:hover{
+    color: #ff1;
+}
+
+
+/* HEADER */
+
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 100%;
+}
+
+.header .banner {
+    display:flex;
+    justify-content: center;
+    width:100%
+}
+
+
+.header .banner img{
+    max-width: 100%;
+    height: auto;
+    border-radius: 4%;
+    border: 1px solid black;
+    margin-top: 1rem;
+}
+
+
+.header nav ul{
+    display:flex;
+    list-style: none;
+    justify-content: center;
+    margin: 0.3rem ;
+    padding: 0.5rem;
+    max-width: 100%;
+    border-radius: 4%;
+    background-color: #8cbf3b;
+    border: 1px solid black;
+
+}
+
+.header nav ul li{
+    font-size: 0.8rem;
+    margin: auto 4rem
+
+}
+
+@media (max-width: 768px) {
+    .header nav ul {
+        padding: 1rem;
+    }
+
+    .header nav ul li {
+        margin: auto 1rem;
+    }
+}
+
+
+/* INTRODUCTION */
+
+
+.introduction {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: center;
+    margin: 0.3rem auto;
+    max-width: 60%;
+    /*background-color: rgba(255, 255, 255, 0.7); 
+    background-color: rgba(172, 202, 123, 0.8);
+    background-color: rgba(54, 64, 39, 0.9);*/
+    background-color: rgba(172, 202, 123, 0.8);
+    border-radius: 4%;
+    padding: 5rem 0;
+}
+
+.introduction p{
+    max-width: 40%;
+    margin-right: 5rem;
+    color:black;
+    font-weight: 500;
+    line-height: 1.4;
+    letter-spacing: 1px;
+
+}
+
+.introduction .tunesong {
+    margin-top: 3rem;
+    max-width: 60%;
+    height: auto;
+}
+
+
+/* CONTACTS */
+
+h5{
+    margin-bottom:0;
+}
+.contacts{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem auto;
+    max-width: 60%;
+    justify-content: space-between;
+    padding: 2rem 0; 
+    
+}
+
+.contact-item{
+    margin-right:2rem;
+    box-shadow: 10px 5px 5px rgba(54, 64, 39, 0.9);
+}
+.contacts img {
+    float: left;
+    width:  100px;
+    height: 100px;
+    object-fit: cover;
+
+}
+
+
+.contact-item:hover{
+    box-shadow: none;
+}
+
+@media (max-width: 768px) {
+    .header .banner img {
+        max-width: 80%;
+        margin-top: 0.5rem;
+    }
+
+    .header nav ul {
+        display: none;
+    }
+
+    .header nav .menu-toggle {
+        display: block;
+    }
+
+    /* INTRODUCTION */
+    .introduction {
+        max-width: 100%;
+        padding: 2rem 0;
+    }
+
+    .introduction p {
+        max-width: 100%;
+        margin-right: 0;
+        font-size: 16px;
+    }
+
+    .introduction .tunesong {
+        margin-top: 2rem;
+        max-width: 100%;
+    }
+
+    /* CONTACTS */
+    .contacts {
+        max-width: 100%;
+        padding: 1rem 0;
+        flex-wrap: wrap;
+    }
+
+    .contact-item {
+        margin-right: 1rem;
+        margin-bottom: 1rem;
+    }
+
+    .contacts img {
+        float: none;
+        width:  60px;
+        height: 60px;
+        margin-right: 0.5rem;
+    }
+
+    /* Paragraph font size */
+    p {
+        font-size: 14px;
+    }
+}
